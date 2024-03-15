@@ -2,12 +2,13 @@
 
 using System.Diagnostics.CodeAnalysis;
 using System.Text.Json;
-using System.Text.Json.Serialization;
+
+using Challenge.Configuration.JsonConverters;
 
 public static class ConfigurationExtensions
 {
     private static readonly JsonSerializerOptions JsonOptions =
-        new(JsonSerializerDefaults.Web) { Converters = { new JsonStringEnumConverter() } };
+        new(JsonSerializerDefaults.Web) { Converters = { new BoardSettingsJsonConverter() } };
 
     public static bool TryToDeserialize<T>(this string? file, [NotNullWhen(true)]out T? result)
     {

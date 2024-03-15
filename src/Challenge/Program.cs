@@ -21,3 +21,5 @@ else
 {
     Console.WriteLine("Invalid moves file. Press any key to exit.");
 }
+
+Console.ReadLine();
