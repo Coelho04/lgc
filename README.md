@@ -53,7 +53,7 @@ The choosen format of the files was JSON mainly because of its readability and e
 ```
 
 We perform some validations on the Game Settings Json, for instance:
-- We Validte that the Height and Width of the board cannot be lower or equal to 0
+- We Validate that the Height and Width of the board cannot be lower or equal to 0
 - We validate that the turtle initial position is not the as a mine or exit
 - We validate that the turtle initial position is not outside of the board
 
